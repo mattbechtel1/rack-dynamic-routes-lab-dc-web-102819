@@ -11,7 +11,7 @@ class Application
       item = @@items.find {|item| item.name == item_word}
       resp.write item.price
     else
-      
+
   end
 
 end
