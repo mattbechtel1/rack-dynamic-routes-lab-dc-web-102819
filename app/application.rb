@@ -11,7 +11,11 @@ class Application
       item = @@items.find {|item| item.name == item_word}
       resp.write item.price
     else
+      resp.write "Item not found."
+      resp.status = 404
+    end
 
+    resp.finish
   end
 
 end
